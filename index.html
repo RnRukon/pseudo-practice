@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before {
+            content: "Hello ";
+            color: coral;
+        }
+
+        h1::after {
+            content: " thelo";
+            color: darkkhaki;
+
+        }
+
+        blockquote::before {
+            content: open-quote;
+            color: deeppink;
+            font-size: 1.5rem;
+        }
+
+
+        blockquote::after {
+            content: close-quote;
+            color: deeppink;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            display: inline-block;
+            transition: 1s;
+        }
+
+        h3:hover::after {
+            content: '';
+            height: 2px;
+            width: 0%;
+            background-color: deeppink;
+            display: block;
+
+        }
+
+        h4 {
+
+            display: inline-block;
+            border-width: 100%;
+            transition: 1s;
+            border-bottom: 5px solid indianred;
+
+
+        }
+
+        h4:hover {
+
+            border-width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h3>Rukon uddin</h3>
+
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <h2>Best Quotes</h2>
+
+
+    <blockquote>Lorem ipsum dolor sit amet.</blockquote>
+
+
+    <h4>rukon</h4>
+
+</body>
+
+</html>
